@@ -1,0 +1,308 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.catoProj.cato.MainActivity$PlaceholderFragment" >
+
+    <ImageView
+        android:id="@+id/speedImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/speed" />
+
+    <TextView
+        android:id="@+id/textSpeedLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/speedImage"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/speed_string" />
+
+    <ImageView
+        android:id="@+id/imageSpeedUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/textSpeedLine"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/bar" />
+
+    <TextView
+        android:id="@+id/textSpeedAdvice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/textSpeedLine"
+        android:text="110" />
+
+    <TextView
+        android:id="@+id/textSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textSpeedAdvice"
+        android:layout_below="@id/textSpeedAdvice"
+        android:layout_marginTop="10dp"
+        android:text="112" />
+
+    <TextView
+        android:id="@+id/textSpeeddif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textSpeed"
+        android:layout_below="@id/textSpeed"
+        android:layout_marginTop="10dp"
+        android:text="-120" />
+
+    <TextView
+        android:id="@+id/textSpeedUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textSpeeddif"
+        android:layout_below="@id/textSpeeddif"
+        android:layout_marginTop="10dp"
+        android:text="km/h"
+        android:textSize="8sp" />
+
+    <com.catoProj.basic.DigitalClock
+        android:id="@+id/digitalClockTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/textSpeedAdvice"
+        android:layout_marginLeft="145dp"
+        android:text="DigitalClock" />
+
+    <TextView
+        android:id="@+id/textClockArrive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/digitalClockTime"
+        android:layout_alignTop="@id/textSpeed"
+        android:layout_below="@id/digitalClockTime"
+        android:text="11:34:00" />
+
+    <TextView
+        android:id="@+id/textDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textClockArrive"
+        android:layout_alignTop="@id/textSpeeddif"
+        android:layout_below="@id/textClockArrive"
+        android:text="8.1 km" />
+
+    <TextView
+        android:id="@+id/textNextStation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textDistance"
+        android:layout_alignTop="@id/textSpeedUnit"
+        android:layout_below="@id/textDistance"
+        android:layout_marginLeft="5dp"
+        android:text="Kva"
+        android:textSize="8sp" />
+
+    <ImageView
+        android:id="@+id/blankImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/speedImage"
+        android:layout_marginLeft="150dp"
+        android:layout_toRightOf="@+id/speedImage"
+        android:src="@drawable/abc_ab_bottom_transparent_dark_holo" />
+
+    <TextView
+        android:id="@+id/textCompanyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/speedImage"
+        android:layout_marginLeft="150dp"
+        android:layout_toRightOf="@id/speedImage"
+        android:text="Kororder,linjebok etc." />
+
+    <TextView
+        android:id="@+id/textArriveTIme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/textCompanyName"
+        android:layout_marginLeft="70dp"
+        android:layout_toRightOf="@id/textCompanyName"
+        android:text="15:46:00"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textArriveStation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textArriveTIme"
+        android:layout_below="@id/textArriveTIme"
+        android:text="Forarbyte" />
+
+    <TextView
+        android:id="@+id/textDist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textArriveStation"
+        android:layout_below="@id/textArriveStation"
+        android:text="till 567" />
+
+    <TextView
+        android:id="@+id/textIsm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textDist"
+        android:layout_below="@id/textDist"
+        android:text="i SM" />
+
+    <ImageView
+        android:id="@+id/timeLineImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/textCompanyName"
+        android:layout_marginLeft="150dp"
+        android:layout_toRightOf="@id/textCompanyName"
+        android:src="@drawable/timeline" />
+
+    <TextView
+        android:id="@+id/timeLineTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/timeLineImage"
+        android:layout_alignLeft="@id/timeLineImage" />
+
+    <TextView
+        android:id="@+id/textSKva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timeLineTxt"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/timeLineTxt"
+        android:text="S Kva 3 H"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textFPc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textSKva"
+        android:layout_below="@id/textSKva"
+        android:layout_marginTop="15dp"
+        android:text="F Pc 3"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textStaNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/textFPc"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/textFPc"
+        android:text="9542"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textArrTime1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/textSKva"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/textStaNum"
+        android:text="13:36:00"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textArrTime2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textArrTime1"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/textStaNum"
+        android:text="&lt;13:34:00"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textArrTime3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/textStaNum"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/textStaNum"
+        android:text=">13:23:00"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/GraArea"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_alignLeft="@id/speedImage"
+        android:layout_below="@id/speedImage" >
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/StationArea"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@id/GraArea"
+        android:layout_below="@id/GraArea" >
+
+        <ImageView
+            android:id="@+id/imageViewTrain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="135dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/train" />
+
+        <TextView
+            android:id="@+id/textViewRailU"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="13dp"
+            android:text="U"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/TextViewRailN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="23dp"
+            android:text="N"
+            android:textSize="8sp" />
+
+</RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textNextStation"
+        android:layout_alignLeft="@+id/textSKva"
+        android:layout_alignRight="@+id/timeLineImage"
+        android:layout_alignTop="@+id/digitalClockTime" >
+
+        <LinearLayout
+            android:id="@+id/LineStation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
