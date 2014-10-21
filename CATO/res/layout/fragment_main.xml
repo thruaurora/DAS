@@ -35,7 +35,7 @@
         android:id="@+id/textSpeedAdvice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="35dp"
+        android:layout_marginLeft="15dp"
         android:layout_marginTop="3dp"
         android:layout_toRightOf="@id/textSpeedLine"
         android:text="110" />
@@ -243,7 +243,7 @@
     <RelativeLayout
         android:id="@+id/GraArea"
         android:layout_width="match_parent"
-        android:layout_height="260dp"
+        android:layout_height="420dp"
         android:layout_alignLeft="@id/speedImage"
         android:layout_below="@id/speedImage" >
 
@@ -252,7 +252,7 @@
     <RelativeLayout
         android:id="@+id/StationArea"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="120dp"
         android:layout_alignLeft="@id/GraArea"
         android:layout_below="@id/GraArea" >
 
@@ -261,8 +261,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_marginLeft="135dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="34dp"
             android:src="@drawable/train" />
 
         <TextView
@@ -270,8 +270,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_marginLeft="18dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginLeft="46dp"
+            android:layout_marginTop="28dp"
             android:text="U"
             android:textSize="8sp" />
 
@@ -280,8 +280,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_marginLeft="18dp"
-            android:layout_marginTop="23dp"
+            android:layout_marginLeft="46dp"
+            android:layout_marginTop="48dp"
             android:text="N"
             android:textSize="8sp" />
 

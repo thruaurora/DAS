@@ -158,9 +158,9 @@ public class MainActivity extends ActionBarActivity {
 
 				
 				LayoutParams params = (LayoutParams)stnametxt.getLayoutParams();
-		        params.topMargin = 15;
+		        params.topMargin = 30;
 		        //350 is the startLine
-		        params.leftMargin=50+((int)(st.getsX()*5.5));
+		        params.leftMargin=70+((int)(st.getsX()*3.7));
 		        stnametxt.setLayoutParams(params);
 				
 			}
@@ -281,11 +281,11 @@ public void refreshStation(){
 		Station st=(Station)stlist.get(i);
 		TextView stnametxt=(TextView) rootView.findViewById(99900+i);
 		LayoutParams params = (LayoutParams)stnametxt.getLayoutParams();
-        params.topMargin = 15;
+        params.topMargin = 30;
         //350 is the startLine
         int oldleft=params.leftMargin;
         System.out.println("oldleft="+String.valueOf(oldleft)+"     du.getJump()="+String.valueOf(du.getJump()));
-        params.leftMargin=oldleft-du.getJumpadd()*5;
+        params.leftMargin=oldleft-du.getJumpadd()*4;
         if( params.leftMargin<350){
         	 params.leftMargin=-50;
         }
