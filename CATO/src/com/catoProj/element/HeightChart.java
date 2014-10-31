@@ -90,16 +90,16 @@ public class HeightChart extends AbstractGraChart {
 
 	    //int[] colors = new int[] { Color.GRAY,Color.BLUE, Color.BLACK, Color.RED, Color.GREEN, Color.GRAY };
 	    int[] colors = null;
-	    if(du.getColor()==null){
-	    	colors = new int[] { Color.GRAY,Color.BLUE, Color.BLACK, Color.RED, Color.GREEN, Color.GRAY };
-	    }else{
+	    //if(du.getColor()==null){
+	    	colors = new int[] { Color.MAGENTA,Color.BLUE, Color.BLACK, Color.RED, Color.GREEN, Color.DKGRAY, Color.GRAY, Color.GRAY, Color.GRAY, Color.GRAY, Color.YELLOW };
+	    /*}else{
 	    	colors=du.getColor();
-	    }
+	    }*/
 	    
 	    
-	    PointStyle[] styles = new PointStyle[] { PointStyle.POINT, PointStyle.POINT, PointStyle.POINT, PointStyle.POINT, PointStyle.POINT, PointStyle.POINT, PointStyle.POINT};
+	    PointStyle[] styles = new PointStyle[] { PointStyle.POINT, PointStyle.POINT, PointStyle.POINT, PointStyle.POINT, PointStyle.POINT, PointStyle.POINT, PointStyle.POINT, PointStyle.POINT, PointStyle.POINT, PointStyle.POINT, PointStyle.POINT};
 	    XYMultipleSeriesRenderer renderer = buildRenderer(colors, styles);
-	    setChartSettings(renderer, "CATO Advice", "Location (KM)", "Altitude / Speed", 0.5,
+	    setChartSettings(renderer, " ", " ", " ", 0.5,
 	        300.50, 0, 220, Color.BLACK, Color.BLACK);
 	    renderer.setXLabels(40);
 	    renderer.setYLabels(1);
@@ -116,6 +116,7 @@ public class HeightChart extends AbstractGraChart {
 	    renderer.setShowAxes(false);
 	    renderer.setXLabelsColor(Color.WHITE);
 	    renderer.setYLabelsColor(0, Color.WHITE);
+	    renderer.setShowLegend(false);
 	    
 	    int length = renderer.getSeriesRendererCount();
 

@@ -1088,9 +1088,9 @@ containing a value of this type.
     }
     public static final class id {
         public static final int GraArea=0x7f050056;
-        public static final int LineStation=0x7f05005c;
-        public static final int StationArea=0x7f050057;
-        public static final int TextViewRailN=0x7f05005a;
+        public static final int LineStation=0x7f050061;
+        public static final int StationArea=0x7f05005c;
+        public static final int TextViewRailN=0x7f05005f;
         public static final int action_bar=0x7f05001c;
         public static final int action_bar_activity_content=0x7f050015;
         public static final int action_bar_container=0x7f05001b;
@@ -1124,7 +1124,7 @@ containing a value of this type.
         public static final int ifRoom=0x7f05000a;
         public static final int image=0x7f050027;
         public static final int imageSpeedUp=0x7f05003f;
-        public static final int imageViewTrain=0x7f050058;
+        public static final int imageViewTrain=0x7f05005d;
         public static final int listMode=0x7f050001;
         public static final int list_item=0x7f050029;
         public static final int middle=0x7f050012;
@@ -1134,7 +1134,7 @@ containing a value of this type.
         public static final int progress_circular=0x7f050018;
         public static final int progress_horizontal=0x7f050019;
         public static final int radio=0x7f05002f;
-        public static final int scrollView1=0x7f05005b;
+        public static final int scrollView1=0x7f050060;
         public static final int search_badge=0x7f050032;
         public static final int search_bar=0x7f050031;
         public static final int search_button=0x7f050033;
@@ -1172,7 +1172,12 @@ containing a value of this type.
         public static final int textSpeedUnit=0x7f050043;
         public static final int textSpeeddif=0x7f050042;
         public static final int textStaNum=0x7f050052;
-        public static final int textViewRailU=0x7f050059;
+        public static final int textView10km=0x7f05005b;
+        public static final int textView1km=0x7f050059;
+        public static final int textView500m=0x7f050058;
+        public static final int textView5km=0x7f05005a;
+        public static final int textViewRailU=0x7f05005e;
+        public static final int textViewTrain=0x7f050057;
         public static final int timeLineImage=0x7f05004e;
         public static final int timeLineTxt=0x7f05004f;
         public static final int title=0x7f05002b;

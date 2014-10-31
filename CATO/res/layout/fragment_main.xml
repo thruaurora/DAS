@@ -119,7 +119,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@id/speedImage"
-        android:layout_marginLeft="150dp"
+        android:layout_marginLeft="300dp"
         android:layout_toRightOf="@id/speedImage"
         android:text="Kororder,linjebok etc." />
 
@@ -247,6 +247,56 @@
         android:layout_alignLeft="@id/speedImage"
         android:layout_below="@id/speedImage" >
 
+        <TextView
+            android:id="@+id/textViewTrain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="340dp"
+            android:layout_marginLeft="230dp"
+            android:text="Nu" />
+
+        <TextView
+            android:id="@+id/textView500m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="365dp"
+            android:layout_marginLeft="420dp"
+            android:text="500m" />
+        
+        <TextView
+            android:id="@+id/textView1km"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="365dp"
+            android:layout_marginLeft="600dp"
+            android:text="1km" />
+        
+        <TextView
+            android:id="@+id/textView5km"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="365dp"
+            android:layout_marginLeft="790dp"
+            android:text="2km" />
+        
+        <TextView
+            android:id="@+id/textView10km"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="365dp"
+            android:layout_marginLeft="970dp"
+            android:text="2.5km" />
+
     </RelativeLayout>
 
     <RelativeLayout
@@ -261,7 +311,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_marginLeft="210dp"
+            android:layout_marginLeft="215dp"
             android:layout_marginTop="34dp"
             android:src="@drawable/train" />
 

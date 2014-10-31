@@ -111,7 +111,7 @@ public class DataUtil {
 		
 		heightChartData=null;
 		heightChartData=new HashMap();
-		String[] titles = new String[] { "Altitude", "Location", "Advice Speed", "Advice Speed History", "Actual Speed", "Current Location", "Limit Speed"};
+		String[] titles = new String[] { "Altitude", "Location", "Advice Speed", "Advice Speed History", "Actual Speed", "Current Location", "500m",  "1km", "5km", "10km", "Limit Speed"};
 		//Define X/Y axis
 		List<double[]> xvalues = new ArrayList<double[]>();
 		List<double[]> yvalues = new ArrayList<double[]>();
@@ -243,7 +243,27 @@ public class DataUtil {
 	  //axis for Current Location
 	    xvalues.add(new double[] {startLoc-1,startLoc-1});
 	  //yvalues for Current Location
-	    yvalues.add(new double[] {0,220});
+	    yvalues.add(new double[] {0,180});
+	    
+	  //axis for 500m
+	    xvalues.add(new double[] {startLoc+50,startLoc+50});
+	  //yvalues for 500m
+	    yvalues.add(new double[] {0,200});
+	    
+	  //axis for 1km
+	    xvalues.add(new double[] {startLoc+100,startLoc+100});
+	  //yvalues for 1km
+	    yvalues.add(new double[] {0,200});
+	    
+	  //axis for 5km
+	    xvalues.add(new double[] {startLoc+150,startLoc+150});
+	  //yvalues for 5km
+	    yvalues.add(new double[] {0,200});
+	  
+	   //axis for 10km
+	    xvalues.add(new double[] {startLoc+200,startLoc+200});
+	  //yvalues for 10km
+	    yvalues.add(new double[] {0,200});
 	    
 	  //axis for Limit Speed
 	    //x
