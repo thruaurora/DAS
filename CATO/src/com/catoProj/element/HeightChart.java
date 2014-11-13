@@ -90,11 +90,11 @@ public class HeightChart extends AbstractGraChart {
 
 	    //int[] colors = new int[] { Color.GRAY,Color.BLUE, Color.BLACK, Color.RED, Color.GREEN, Color.GRAY };
 	    int[] colors = null;
-	    //if(du.getColor()==null){
+	    if(du.getColor()==null){
 	    	colors = new int[] { Color.MAGENTA,Color.BLUE, Color.BLACK, Color.RED, Color.GREEN, Color.DKGRAY, Color.GRAY, Color.GRAY, Color.GRAY, Color.GRAY, Color.YELLOW };
-	    /*}else{
+	    }else{
 	    	colors=du.getColor();
-	    }*/
+	    }
 	    
 	    
 	    PointStyle[] styles = new PointStyle[] { PointStyle.POINT, PointStyle.POINT, PointStyle.POINT, PointStyle.POINT, PointStyle.POINT, PointStyle.POINT, PointStyle.POINT, PointStyle.POINT, PointStyle.POINT, PointStyle.POINT, PointStyle.POINT};
