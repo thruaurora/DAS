@@ -16,7 +16,7 @@ public class DataUtil {
 	private int qtime=0; //query
 	private int jump=0;
 	private int jumpadd=0;
-	private int trainLenth=20; //length of the train
+	private int trainLenth=40; //length of the train
 	private int startLoc=60; //start location of the train
 	private static DataUtil instance;
 	private HashMap speedData=null;
@@ -420,14 +420,14 @@ public class DataUtil {
 	
 	public void getIniData(){
 		String result = "";
-		result = HttpUtil.queryStringForPost("http://192.168.1.101:8080/CATOWeb/LoadMessage?mode=AltX");
+		result = HttpUtil.queryStringForPost("http://192.168.1.10:8080/CATOWeb/LoadMessage?mode=AltX");
 		//System.out.println(result);
 		String[] altxdata=result.split(",");
 		AltX=new double[altxdata.length];
 		for(int i=0;i<altxdata.length;i++){
 			AltX[i]=Double.valueOf(altxdata[i]).doubleValue();
 		}
-		result = HttpUtil.queryStringForPost("http://192.168.1.101:8080/CATOWeb/LoadMessage?mode=AltY");
+		result = HttpUtil.queryStringForPost("http://192.168.1.10:8080/CATOWeb/LoadMessage?mode=AltY");
 		//System.out.println(result);
 		String[] altydata=result.split(",");
 		AltY=new double[altydata.length];
@@ -435,7 +435,7 @@ public class DataUtil {
 			AltY[i]=Double.valueOf(altydata[i]).doubleValue();
 		}
 		
-		result = HttpUtil.queryStringForPost("http://192.168.1.101:8080/CATOWeb/LoadMessage?mode=LMTS");
+		result = HttpUtil.queryStringForPost("http://192.168.1.10:8080/CATOWeb/LoadMessage?mode=LMTS");
 		//System.out.println(result);
 		String[] lmtsdata=result.split(",");
 		LmtS=new double[lmtsdata.length+startLoc];
@@ -446,7 +446,7 @@ public class DataUtil {
 			LmtS[startLoc+i]=Double.valueOf(lmtsdata[i]).doubleValue();
 		}
 		
-		result = HttpUtil.queryStringForPost("http://192.168.1.101:8080/CATOWeb/LoadMessage?mode=AdvS");
+		result = HttpUtil.queryStringForPost("http://192.168.1.10:8080/CATOWeb/LoadMessage?mode=AdvS");
 		//System.out.println(result);
 		String[] advsdata=result.split(",");
 		AdvS=new double[advsdata.length+startLoc];
@@ -458,7 +458,7 @@ public class DataUtil {
 		}
 		
 		
-		/*result = HttpUtil.queryStringForPost("http://192.168.1.101:8080/CATOWeb/LoadMessage?mode=ActS");
+		/*result = HttpUtil.queryStringForPost("http://192.168.1.10:8080/CATOWeb/LoadMessage?mode=ActS");
 		//System.out.println(result);
 		String[] actsdata=result.split(",");
 		ActS=new double[actsdata.length];
@@ -487,7 +487,7 @@ public class DataUtil {
 			System.out.println("RActS["+String.valueOf(i)+"]:"+String.valueOf(RActS[i]));
 		}*/
 		
-		result = HttpUtil.queryStringForPost("http://192.168.1.101:8080/CATOWeb/LoadMessage?mode=COLOR");
+		result = HttpUtil.queryStringForPost("http://192.168.1.10:8080/CATOWeb/LoadMessage?mode=COLOR");
 		//System.out.println(result);
 		String[] colordata=result.split(",");
 		Color=new int[colordata.length];
@@ -495,7 +495,7 @@ public class DataUtil {
 			Color[i]=Integer.valueOf(colordata[i]).intValue();
 		}
 		
-		/*result = HttpUtil.queryStringForPost("http://192.168.1.101:8080/CATOWeb/LoadMessage?mode=Station");
+		/*result = HttpUtil.queryStringForPost("http://192.168.1.10:8080/CATOWeb/LoadMessage?mode=Station");
 		//System.out.println(result);
 		String[] stationdata=result.split(",");
 		Station=new Station[stationdata.length];
@@ -518,7 +518,7 @@ public class DataUtil {
 	
 	public void getLocData(){
 		String result = "";
-		result = HttpUtil.queryStringForPost("http://192.168.1.101:8080/CATOWeb/LoadMessage?mode=ActS");
+		result = HttpUtil.queryStringForPost("http://192.168.1.10:8080/CATOWeb/LoadMessage?mode=ActS");
 		//System.out.println(result);
 		String[] actsdata=result.split(",");
 		ActS=new double[actsdata.length];
@@ -562,7 +562,7 @@ public class DataUtil {
 	public void getStaData(){
 		String result = "";
 		
-		result = HttpUtil.queryStringForPost("http://192.168.1.101:8080/CATOWeb/LoadMessage?mode=Station");
+		result = HttpUtil.queryStringForPost("http://192.168.1.10:8080/CATOWeb/LoadMessage?mode=Station");
 		//System.out.println(result);
 		String[] stationdata=result.split(",");
 		Station=new Station[stationdata.length];

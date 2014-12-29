@@ -19,8 +19,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/speedImage"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="65dp"
         android:text="@string/speed_string" />
 
     <ImageView
@@ -28,17 +28,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@id/textSpeedLine"
-        android:layout_marginLeft="15dp"
+        android:layout_marginLeft="35dp"
         android:src="@drawable/bar" />
 
     <TextView
         android:id="@+id/textSpeedAdvice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
+        android:layout_marginLeft="45dp"
         android:layout_marginTop="3dp"
         android:layout_toRightOf="@id/textSpeedLine"
-        android:text="110" />
+        android:text="110"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/textSpeed"
@@ -46,8 +47,9 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/textSpeedAdvice"
         android:layout_below="@id/textSpeedAdvice"
-        android:layout_marginTop="10dp"
-        android:text="112" />
+        android:layout_marginTop="20dp"
+        android:text="112"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/textSpeeddif"
@@ -55,8 +57,9 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/textSpeed"
         android:layout_below="@id/textSpeed"
-        android:layout_marginTop="10dp"
-        android:text="-120" />
+        android:layout_marginTop="20dp"
+        android:text="-120"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/textSpeedUnit"
@@ -64,17 +67,18 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/textSpeeddif"
         android:layout_below="@id/textSpeeddif"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:text="km/h"
-        android:textSize="8sp" />
+        android:textSize="16sp" />
 
     <com.catoProj.basic.DigitalClock
         android:id="@+id/digitalClockTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@id/textSpeedAdvice"
-        android:layout_marginLeft="145dp"
-        android:text="DigitalClock" />
+        android:layout_marginLeft="240dp"
+        android:text="DigitalClock"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/textClockArrive"
@@ -83,7 +87,8 @@
         android:layout_alignLeft="@id/digitalClockTime"
         android:layout_alignTop="@id/textSpeed"
         android:layout_below="@id/digitalClockTime"
-        android:text="11:34:00" />
+        android:text="11:34:00"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/textDistance"
@@ -92,7 +97,8 @@
         android:layout_alignLeft="@id/textClockArrive"
         android:layout_alignTop="@id/textSpeeddif"
         android:layout_below="@id/textClockArrive"
-        android:text="8.1 km" />
+        android:text="8.1 km"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/textNextStation"
@@ -101,16 +107,16 @@
         android:layout_alignLeft="@id/textDistance"
         android:layout_alignTop="@id/textSpeedUnit"
         android:layout_below="@id/textDistance"
-        android:layout_marginLeft="5dp"
+        android:layout_marginLeft="15dp"
         android:text="Kva"
-        android:textSize="8sp" />
+        android:textSize="16sp" />
 
     <ImageView
         android:id="@+id/blankImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/speedImage"
-        android:layout_marginLeft="150dp"
+        android:layout_marginLeft="50dp"
         android:layout_toRightOf="@+id/speedImage"
         android:src="@drawable/abc_ab_bottom_transparent_dark_holo" />
 
@@ -119,9 +125,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@id/speedImage"
-        android:layout_marginLeft="300dp"
+        android:layout_marginLeft="140dp"
         android:layout_toRightOf="@id/speedImage"
-        android:text="Kororder,linjebok etc." />
+        android:text="Kororder,linjebok etc."
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/textArriveTIme"
@@ -140,7 +147,8 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/textArriveTIme"
         android:layout_below="@id/textArriveTIme"
-        android:text="Forarbyte" />
+        android:text="Forarbyte"
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/textDist"
@@ -148,7 +156,8 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/textArriveStation"
         android:layout_below="@id/textArriveStation"
-        android:text="till 567" />
+        android:text="till 567"
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/textIsm"
@@ -156,7 +165,8 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/textDist"
         android:layout_below="@id/textDist"
-        android:text="i SM" />
+        android:text="i SM"
+        android:textSize="16sp" />
 
     <ImageView
         android:id="@+id/timeLineImage"
@@ -243,7 +253,7 @@
     <RelativeLayout
         android:id="@+id/GraArea"
         android:layout_width="match_parent"
-        android:layout_height="420dp"
+        android:layout_height="360dp"
         android:layout_alignLeft="@id/speedImage"
         android:layout_below="@id/speedImage" >
 
@@ -253,7 +263,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
-            android:layout_marginBottom="340dp"
+            android:layout_marginBottom="280dp"
             android:layout_marginLeft="230dp"
             android:text="Nu" />
 
@@ -263,7 +273,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
-            android:layout_marginBottom="365dp"
+            android:layout_marginBottom="305dp"
             android:layout_marginLeft="420dp"
             android:text="500m" />
         
@@ -273,7 +283,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
-            android:layout_marginBottom="365dp"
+            android:layout_marginBottom="305dp"
             android:layout_marginLeft="600dp"
             android:text="1km" />
         
@@ -283,7 +293,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
-            android:layout_marginBottom="365dp"
+            android:layout_marginBottom="305dp"
             android:layout_marginLeft="790dp"
             android:text="2km" />
         
@@ -293,7 +303,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
-            android:layout_marginBottom="365dp"
+            android:layout_marginBottom="305dp"
             android:layout_marginLeft="970dp"
             android:text="2.5km" />
 
@@ -344,12 +354,15 @@
         android:layout_alignBottom="@+id/textNextStation"
         android:layout_alignLeft="@+id/textSKva"
         android:layout_alignRight="@+id/timeLineImage"
-        android:layout_alignTop="@+id/digitalClockTime" >
+        android:layout_alignTop="@+id/digitalClockTime"
+        android:layout_marginTop="10dp" >
 
         <LinearLayout
             android:id="@+id/LineStation"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
             android:orientation="vertical" >
 
         </LinearLayout>

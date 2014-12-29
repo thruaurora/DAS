@@ -125,6 +125,21 @@ public class MainActivity extends ActionBarActivity {
 //			hellotext.setTextColor(Color.BLUE);
 //			hellotext.setText(R.string.hello_sx);
 			
+			TextView nutext=(TextView) rootView.findViewById(R.id.textViewTrain);
+			nutext.setTextColor(Color.BLACK);
+			
+			TextView m500text=(TextView) rootView.findViewById(R.id.textView500m);
+			m500text.setTextColor(Color.BLACK);
+			
+			TextView m1ktext=(TextView) rootView.findViewById(R.id.textView1km);
+			m1ktext.setTextColor(Color.BLACK);
+			
+			TextView m5ktext=(TextView) rootView.findViewById(R.id.textView5km);
+			m5ktext.setTextColor(Color.BLACK);
+			
+			TextView m10ktext=(TextView) rootView.findViewById(R.id.textView10km);
+			m5ktext.setTextColor(Color.BLACK);
+			
 			RelativeLayout graLayout=(RelativeLayout)rootView.findViewById(R.id.GraArea);
 			GraphicalView heightChart =new HeightChart().execute(rootView.getContext());
 			heightChart.setId(99812);
@@ -199,7 +214,7 @@ public class MainActivity extends ActionBarActivity {
 
 
 			LayoutParams params = (LayoutParams)speeduppic.getLayoutParams();
-	        params.topMargin = (int) ((Long)data.get("imageSpeedUp")).longValue()*-5+10;
+	        params.topMargin = (int) ((Long)data.get("imageSpeedUp")).longValue()*-5+5;
 	        speeduppic.setLayoutParams(params);
 	        
 			if(((Long)data.get("imageSpeedUp")).longValue()>0){
@@ -267,7 +282,7 @@ public void refreshStation(){
 		}
 		TextView sttxt=new TextView(this);
 		sttxt.setText(st.getStop()+"  "+st.getsName()+"  "+String.valueOf(st.getTrailNumber())+"  "+st.getH()+"  "+st.getoTrain()+"  "+arrtime);
-		sttxt.setTextSize(10);
+		sttxt.setTextSize(16);
 		LineStation.addView(sttxt);
 
 		TextView line=new TextView(this);

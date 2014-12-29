@@ -117,6 +117,9 @@ public class HeightChart extends AbstractGraChart {
 	    renderer.setXLabelsColor(Color.WHITE);
 	    renderer.setYLabelsColor(0, Color.WHITE);
 	    renderer.setShowLegend(false);
+
+	    //renderer.setApplyBackgroundColor(true);
+	    //renderer.setBackgroundColor(Color.rgb(215, 215, 215));
 	    
 	    int length = renderer.getSeriesRendererCount();
 
